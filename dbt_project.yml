@@ -3,7 +3,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'dbt_new_bq'
-version: '0.21.1'
+version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
@@ -33,6 +33,4 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_new_bq:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: table
+    +materialized: table
